@@ -82,6 +82,7 @@ RUN apk add \
             librsvg \
             ttf-dejavu \
             make \
+            curl \
             git && \
     rm -rf /var/cache/apk/* && \
     wget -O - https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-linux-amd64.tar.gz | tar xvz -C /tmp/ --exclude "**/share/**" && \
